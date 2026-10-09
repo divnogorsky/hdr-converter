@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "product": "HDR Converter",
+  "repository": "https://github.com/divnogorsky/hdr-converter",
+  "channels": {
+    "stable": null,
+    "beta": null
+  }
+}
