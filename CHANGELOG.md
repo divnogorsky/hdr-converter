@@ -2,7 +2,7 @@
 
 All notable changes to HDR Converter. Versions follow [semver](https://semver.org/); pre-releases are marked `-beta`.
 
-## [0.1.3-beta] — unreleased
+## [0.1.3-beta] — 2026-10-09
 
 First public beta.
 
