@@ -2,6 +2,12 @@
 
 All notable changes to HDR Converter. Versions follow [semver](https://semver.org/); pre-releases are marked `-beta`.
 
+## [0.1.4-beta] — 2026-10-09
+
+- Fixed: the app closed right after start with "Unable to load EGL library" on machines where other software had
+  set `PYOPENGL_PLATFORM` or `XDG_SESSION_TYPE`. The app now ignores these settings for its own viewer; nothing in
+  the system is changed.
+
 ## [0.1.3-beta] — 2026-10-09
 
 First public beta.

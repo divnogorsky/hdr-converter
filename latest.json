@@ -5,31 +5,24 @@
   "channels": {
     "stable": null,
     "beta": {
-      "version": "0.1.3",
-      "tag": "v0.1.3-beta",
+      "version": "0.1.4",
+      "tag": "v0.1.4-beta",
       "date": "2026-10-09",
       "prerelease": true,
-      "url": "https://github.com/divnogorsky/hdr-converter/releases/tag/v0.1.3-beta",
+      "url": "https://github.com/divnogorsky/hdr-converter/releases/tag/v0.1.4-beta",
       "notes": [
-        "SDR \u2192 HDR EXR conversion of approved AI video with LTX-2.5 and the SDR\u2192HDR IC-LoRA (Lightricks), locally.",
-        "Native resolution up to 4K on a 10 GB GPU: overlapping chunks, exposure-matched seams.",
-        "Outside the highlights the frame matches the source; resolution, fps, frame count and numbering unchanged.",
-        "ACEScg / ACEScct / sRGB linear OpenEXR (half or float), numbered from 1001, JSON with every parameter, author and version in the EXR metadata.",
-        "Viewer: before/after divider, exposure \u22126\u2026+6 EV, ACES and Un-tone-mapped views, clipped-area overlay, playback.",
-        "Queue for folders of videos; time estimate before starting; resumes after a crash; waits while the GPU or memory are busy with other programs.",
-        "Setup wizard: install everything, reuse the models of an existing ComfyUI, or install into it; Hugging Face access check; resumable, sha256-verified downloads; self-test with progress; uninstall that keeps your own files.",
-        "Runs on machines below the recommended RAM with a warning; starts on laptops with Intel/AMD graphics."
+        "Fixed: the app closed right after start with \"Unable to load EGL library\" on machines where other software had set `PYOPENGL_PLATFORM` or `XDG_SESSION_TYPE`. The app now ignores these settings for its own viewer; nothing in the system is changed."
       ],
       "files": [
         {
-          "name": "HDRConverterSetup-0.1.3.exe",
-          "url": "https://github.com/divnogorsky/hdr-converter/releases/download/v0.1.3-beta/HDRConverterSetup-0.1.3.exe",
-          "size": 30296069,
-          "sha256": "b6d78652b0c999f38b1694e3b8364d75d162f5426bcda79aa5728eff04296fcd"
+          "name": "HDRConverterSetup-0.1.4.exe",
+          "url": "https://github.com/divnogorsky/hdr-converter/releases/download/v0.1.4-beta/HDRConverterSetup-0.1.4.exe",
+          "size": 30290894,
+          "sha256": "bba2a0577bcffe3d16d30c79b75631d197a19154b39a63751084861f61a86e53"
         }
       ],
       "layers": {
-        "app": "0.1.3",
+        "app": "0.1.4",
         "nodes": "0.1.1",
         "comfyui": "0.1.0",
         "models": "0.1.0"
