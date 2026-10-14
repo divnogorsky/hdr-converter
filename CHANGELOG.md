@@ -2,7 +2,7 @@
 
 All notable changes to HDR Converter. Versions follow [semver](https://semver.org/); pre-releases are marked `-beta`.
 
-## [0.2.0-beta] — unreleased
+## [0.2.0-beta] — 2026-10-14
 
 HDR plus passes for compositing, from the same approved shot.
 
