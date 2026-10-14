@@ -2,7 +2,8 @@
 
 ![Exposure pulled from 0 to −6 EV and back: SDR on the left, the HDR EXR on the right](docs/images/exposure-sweep.gif)
 
-**Local SDR → HDR EXR conversion for AI-generated video. Native resolution up to 4K on a single 10 GB GPU.**
+**Local SDR → HDR EXR conversion for AI-generated video — plus depth, normals, motion vectors and a hero matte for
+comp. Native resolution up to 4K on a single 10 GB GPU.**
 
 **[⬇ Download latest release](https://github.com/divnogorsky/hdr-converter/releases)** · [Install guide](docs/install.md) · [Requirements](docs/requirements.md)
 
@@ -18,6 +19,10 @@ into flat grey shapes. Right: HDR EXR — they keep their shape and colour.*
   stitched automatically, exposure-matched at the seams.
 - **Drops into the pipeline.** ACEScg OpenEXR (16-bit half, ZIP) numbered from 1001, names taken from the source,
   a JSON with every parameter next to the frames.
+- **Passes for comp (new in 0.2).** Metric depth, camera-space normals, motion vectors, clip / synth masks and a soft
+  hero matte of the main subject — as layers of the same EXR or a folder per layer. One choice: *HDR + comp passes*.
+
+![One frame of the shot in strips: SDR source, HDR at −3 EV, hero matte, normals, depth](docs/images/passes.webp)
 
 ![The viewer: before/after divider, exposure, ACES and Un-tone-mapped views](docs/images/viewer.jpg)
 

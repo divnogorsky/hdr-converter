@@ -16,6 +16,35 @@ sha256); they are not redistributed by HDR Converter. Components marked **includ
 The LTX-2 Community License is free for organisations with annual revenue under $10M; above that a commercial
 licence from Lightricks is required. It is accepted on Hugging Face before the download.
 
+## Models for passes (optional, Components)
+
+| Component | What it is | Licence | How |
+|---|---|---|---|
+| [MoGe-3 ViT-G](https://huggingface.co/Ruicheng/moge-3-vitg) | depth in metres, normals | MIT | downloaded |
+| [MEMFOF Tartan-T-TSKH](https://huggingface.co/egorchistov/optical-flow-MEMFOF-Tartan-T-TSKH) | optical flow: stabilisation, motion vectors | BSD-3-Clause | downloaded |
+| [Video Depth Anything Large](https://huggingface.co/depth-anything/Video-Depth-Anything-Large) | steadiest depth (opt-in) | CC BY-NC 4.0 — **non-commercial** | downloaded only after the user confirms the licence |
+
+## Passes runtime
+
+| Component | What it is | Licence | How |
+|---|---|---|---|
+| [MoGe](https://github.com/microsoft/MoGe) code | runs MoGe-3 | MIT | included |
+| [utils3d-moge](https://github.com/EasternJournalist/utils3d-moge), [pipeline](https://github.com/EasternJournalist/pipeline) | MoGe helpers | MIT | included |
+| [FlexGEMM](https://github.com/JeffreyXiang/FlexGEMM) | MoGe-3 refiner kernels | MIT | included |
+| [MEMFOF](https://github.com/msu-video-group/memfof) code | runs the optical flow | BSD-3-Clause | included |
+| [Video Depth Anything](https://github.com/DepthAnything/Video-Depth-Anything) code | runs VDA-L when chosen | Apache-2.0 | included |
+| [easydict](https://github.com/makinacorpus/easydict) | MEMFOF config helper | LGPL-3.0 (unmodified, separate module) | included |
+| [triton-windows](https://github.com/woct0rdho/triton-windows) | GPU kernels for FlexGEMM | MIT | downloaded |
+| Python 3.13 headers and import libraries | let Triton build its launcher | PSF License | included |
+| [PyAV](https://github.com/PyAV-Org/PyAV) | source check | BSD-3-Clause (FFmpeg libraries: LGPL) | downloaded |
+
+## Hero matte (optional: installer or Components)
+
+| Component | What it is | Licence | How |
+|---|---|---|---|
+| [LTX-2.5 Alpha Gen IC-LoRA](https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen) | hero matte | [LTX-2 Community License](https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x) | downloaded (installer or Components) |
+| LTX-2.5 text encoder (Gemma-based, int8), from [Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) | encodes the empty prompt once | [LTX-2 Community License](https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x) (Gemma-based) | downloaded (installer or Components) |
+
 ## Runtime
 
 | Component | What it is | Licence | How |

@@ -42,7 +42,8 @@ On machines below the tested desktop (less VRAM or RAM) conversion works but tak
 | NVIDIA driver | with CUDA 13.0 support (R580 or newer) | the bundled PyTorch is a CUDA 13.0 build |
 | RAM | 95 GB (desktop); 32 GB (laptop) | the Full model wants about 52 GB of free memory to load without paging; with less RAM the app warns and still runs, slower — how much slower on real shots is not measured yet |
 | Disk — install everything | about 48 GB, +20 GB with the optional Fast model | plus about 2 GB temporarily during installation |
-| Disk — work space | a 4K, 145-frame shot: about 19 GB of temporary files + 3.1 GB of EXR output | temporary files stay in the app's cache folder |
+| Disk — optional components (0.2) | passes: MoGe-3 4.7 GB + MEMFOF 0.3 GB (+1.4 GB VDA-L); hero matte: Alpha Gen 1.2 GB + text encoder 14.3 GB (needed once, can be removed afterwards) | installed in the wizard or later in Components |
+| Disk — work space | a 4K, 145-frame shot: about 19 GB of temporary files + 3.1 GB of EXR output (HDR only). A 1080p, 121-frame shot with every pass and the hero matte: about 7 GB of temporary files + 4.4 GB of EXR output | temporary files stay in the app's cache folder and make re-runs fast; the app checks the disk before the GPU work starts |
 | Internet | for installation only (about 45 GB of models) | the update check at startup is optional |
 
 ## Notes
